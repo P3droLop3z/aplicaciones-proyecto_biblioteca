@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <h1>Libros Disponibles</h1>
+    <div id="libros"></div>
+
+    <script>
+        fetch('/BackEnd/consultas.php')
+            .then(response => response.json())
+            .then(data => {
+                let librosDiv = document.getElementById('libros');
+                data.forEach(libro => {
+                    
+                    let libroInfo = document.createElement('p');
+                    libroInfo.textContent = `${libro.titulo} - ${libro.autor}`;
+                    librosDiv.appendChild(libroInfo);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>
