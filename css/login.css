@@ -1,0 +1,48 @@
+body {
+    background-color: #fff8dc;
+}
+
+.login-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-primary:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+.form-control {
+    border: 1px solid #ffeeba;
+    border-radius: 10px;
+}
+
+.form-control:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+}
+
+.texto-enlace2 {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.texto-enlace2:hover {
+    text-decoration: underline;
+}
+
+.text-muted {
+    color: #d39e00 !important;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
