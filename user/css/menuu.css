@@ -1,0 +1,43 @@
+body {
+    background-color: #fff8dc; /* Fondo amarillo claro */
+}
+
+.navbar {
+    background-color: #ffc107; /* Amarillo vibrante */
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important; /* Texto blanco */
+}
+
+.nav-link:hover {
+    color: #4d3e0f !important; /* Texto amarillo oscuro */
+}
+
+.banner {
+    background-color: #ffc107;
+    padding: 30px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-primary:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+.card {
+    border: 1px solid #ffeeba;
+}
+
+.card-header {
+    background-color: #ffc107;
+    color: #ffffff;
+}
