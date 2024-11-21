@@ -1,9 +1,11 @@
 <?php
-require_once '../config/config.php'; 
+require_once __DIR__ . '/../config/config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $firstName = trim($_POST['FirstName']);
-    $lastName = trim($_POST['LastName']);
+    $firstName = trim($_POST['firstName']);
+    $lastName = trim($_POST['lastName']);
+    $telefono = trim($_POST['tele']);
+    $direccion = trim($_POST['dire']);
     $email = trim($_POST['Email']);
     $password = trim($_POST['pass']);
 
@@ -26,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $insertQuery = "INSERT INTO Usuarios (FirstName, LastName, Email, pass, Telefono, Direccion, fechaReg, Estado, ROL) 
                     VALUES (?, ?, ?, ?, ?, ?, CURDATE(), 'Activo', 'Administrador')";
     $stmt = $conn->prepare($insertQuery);
-    $stmt->bind_param('ssss', $firstName, $lastName, $email, $hashed_password, $rol);
+    $stmt->bind_param('ssssss', $firstName, $lastName, $telefono, $direccion, $email, $hashed_password);
 
     if ($stmt->execute()) {
         header('Location: ../FrontEnd/index.html?success=Administrador registrado con éxito');
@@ -40,3 +42,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit();
 }
 ?>
+<h2>gfjfh</h2>
