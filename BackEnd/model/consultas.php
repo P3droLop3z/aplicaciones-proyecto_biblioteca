@@ -1,5 +1,5 @@
 <?php
-include '/config/config.php';
+include '../config/config.php';
 
 $sql = "SELECT * FROM Libros";
 $result = $conn->query($sql);
@@ -12,6 +12,7 @@ if ($result->num_rows > 0) {
     }
 }
 
+header('Content-Type: application/json');
 echo json_encode($libros);
 
 $conn->close();
