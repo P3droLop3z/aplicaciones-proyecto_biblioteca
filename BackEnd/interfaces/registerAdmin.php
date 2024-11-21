@@ -15,32 +15,32 @@
                 <!-- First Name -->
                 <div class="mb-3">
                     <label for="firstName" class="form-label">Nombre:</label>
-                    <input type="text" name="data-firstName" id="firstName" class="form-control" placeholder="Tu nombre" required>
+                    <input type="text" name="firstName" id="firstName" class="form-control" placeholder="Tu nombre" required>
                 </div>
                 <!-- Last Name -->
                 <div class="mb-3">
                     <label for="lastName" class="form-label">Apellido:</label>
-                    <input type="text" name="data-lastName" id="lastName" class="form-control" placeholder="Tu apellido" required>
+                    <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Tu apellido" required>
                 </div>
                 <!-- Telefono -->
                 <div class="mb-3">
                     <label for="telefono" class="form-label">Telefono:</label>
-                    <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Telefono" required>
+                    <input type="text" name="tele" id="telefono" class="form-control" placeholder="Telefono" required>
                 </div>
                 <!-- Direccion -->
                 <div class="mb-3">
                     <label for="direccion" class="form-label">Direccion:</label>
-                    <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Direccion" required>
+                    <input type="text" name="dire" id="direccion" class="form-control" placeholder="Direccion" required>
                 </div>
                 <!-- Email -->
                 <div class="mb-3">
                     <label for="email" class="form-label">Email:</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="admin@example.com" required>
+                    <input type="email" name="Email" id="email" class="form-control" placeholder="admin@example.com" required>
                 </div>
                 <!-- Password -->
                 <div class="mb-3">
                     <label for="password" class="form-label">Contraseña:</label>
-                    <input type="password" name="password" id="password" class="form-control" placeholder="Crea una contraseña" required>
+                    <input type="password" name="pass" id="password" class="form-control" placeholder="Crea una contraseña" required>
                 </div>
                 <!-- Submit Button -->
                 <button type="submit" class="btn btn-primary w-100">Registrar</button>
