@@ -1,5 +1,5 @@
 <?php
-    header('Location: BackEnd/interfaces/loginAdmin.php'); // Redirige al login
+    header('Location: BackEnd/view/loginAdmin.php'); // Redirige al login
     exit();
 ?>
 
