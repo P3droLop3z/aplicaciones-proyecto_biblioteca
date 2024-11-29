@@ -1,43 +1,54 @@
+/* General */
 body {
     background-color: #fff8dc; /* Fondo amarillo claro */
+    font-family: 'Roboto', sans-serif;
 }
 
+/* Navbar */
 .navbar {
-    background-color: #ffc107; /* Amarillo vibrante */
+    background-color: #ffc107;
 }
 
 .navbar-brand, .nav-link {
-    color: #ffffff !important; /* Texto blanco */
+    color: #ffffff !important;
 }
 
 .nav-link:hover {
-    color: #4d3e0f !important; /* Texto amarillo oscuro */
+    color: #4d3e0f !important;
 }
 
+/* Banner */
 .banner {
-    background-color: #ffc107;
-    padding: 30px;
+    background: linear-gradient(90deg, #ffc107, #e0a800);
+    padding: 40px 20px;
     border-radius: 10px;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.btn-primary {
-    background-color: #ffc107;
-    border-color: #ffc107;
+/* Buscador */
+.search-bar .form-control {
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 
-.btn-primary:hover {
-    background-color: #e0a800;
-    border-color: #e0a800;
+.search-bar .btn {
+    border-radius: 0 0.5rem 0.5rem 0;
 }
 
+/* Tarjetas de Libros */
 .card {
-    border: 1px solid #ffeeba;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-header {
-    background-color: #ffc107;
-    color: #ffffff;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tarjetas de Actividad */
+.card-title {
+    color: #d39e00;
+}
+
+.card-text {
+    color: #4d3e0f;
 }
