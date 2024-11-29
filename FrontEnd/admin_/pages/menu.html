@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="./../css/menua.css">
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: #ffc107;">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
         <div class="container">
             <a class="navbar-brand text-white fw-bold" href="./menu.html">Biblioteca Administrador</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,15 +17,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    
-                    <!-- Iconos alineados -->
-                    <li class="nav-item d-flex align-items-center ms-3 menu-item">
-                        <a href="#" class="text-white d-flex align-items-center justify-content-center" style="font-size: 24px; text-decoration: none;">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" title="Ajustes">
                             <span class="material-icons">settings</span>
                         </a>
                     </li>
-                    <li class="nav-item d-flex align-items-center ms-3 log-button">
-                        <a href="./../../main.html" class="text-white d-flex align-items-center justify-content-center" style="font-size: 24px; text-decoration: none;">
+                    <li class="nav-item">
+                        <a href="./../../main.html" class="nav-link text-white" title="Cerrar sesión">
                             <span class="material-icons">logout</span>
                         </a>
                     </li>
@@ -35,68 +32,74 @@
         </div>
     </nav>
     
-    <div class="container container-menu">
-        <h1 class="section-title">Bienvenido, Administrador</h1>
-        <p class="text-muted">Gestiona la biblioteca desde este panel principal.</p>
+    <header class="py-5 text-center text-white">
+        <div class="container">
+            <h1 class="bla">Bienvenido, Administrador</h1>
+            <p class="lead">Gestiona la biblioteca desde este panel principal</p>
+        </div>
+    </header>
 
+    <main class="container my-5">
         <div class="row g-4">
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header text-center">
-                        <span class="material-icons">group</span> Usuarios
-                    </div>
+                <div class="card card-dashboard">
                     <div class="card-body text-center">
+                        <span class="material-icons icon-dashboard">group</span>
+                        <h5>Usuarios</h5>
                         <p>Gestiona los usuarios registrados en el sistema.</p>
                         <a href="./users.html" class="btn btn-primary">Ver Usuarios</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header text-center">
-                        <span class="material-icons">book</span> Libros
-                    </div>
+                <div class="card card-dashboard">
                     <div class="card-body text-center">
+                        <span class="material-icons icon-dashboard">book</span>
+                        <h5>Libros</h5>
                         <p>Administra los libros disponibles en la biblioteca.</p>
                         <a href="./books.html" class="btn btn-primary">Ver Libros</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header text-center">
-                        <span class="material-icons">assignment</span> Préstamos
-                    </div>
+                <div class="card card-dashboard">
                     <div class="card-body text-center">
+                        <span class="material-icons icon-dashboard">assignment</span>
+                        <h5>Préstamos</h5>
                         <p>Gestiona los préstamos realizados por los usuarios.</p>
                         <a href="./loan.html" class="btn btn-primary">Ver Préstamos</a>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="row g-4 mt-3">
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header text-center">
-                        <span class="material-icons">bookmark</span> Reservas
-                    </div>
+                <div class="card card-dashboard">
                     <div class="card-body text-center">
+                        <span class="material-icons icon-dashboard">bookmark</span>
+                        <h5>Reservas</h5>
                         <p>Administra las reservas realizadas por los usuarios.</p>
                         <a href="./reservation.html" class="btn btn-primary">Ver Reservas</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header text-center">
-                        <span class="material-icons">money</span> Multas
-                    </div>
+                <div class="card card-dashboard">
                     <div class="card-body text-center">
+                        <span class="material-icons icon-dashboard">money</span>
+                        <h5>Multas</h5>
                         <p>Gestiona las multas pendientes de los usuarios.</p>
                         <a href="./ticket.html" class="btn btn-primary">Ver Multas</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <!--<footer class="text-center py-3">
+        <p class="text-muted">&copy; 2024 Biblioteca Digital. Todos los derechos reservados.</p>
+    </footer>-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-k5Mzrx3ij4U1s8KfNxknslJ4+ZOm+zRx/8f7a4gJmgJ7xs1dt2e0dtnWITaeUtF6" crossorigin="anonymous"></script>
 </body>

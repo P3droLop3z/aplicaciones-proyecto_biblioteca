@@ -1,0 +1,105 @@
+/* Estilo general */
+body {
+    background-color: #fff7e6; 
+    color: #4d3e0f; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.bla {
+    color: black;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffc107; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #4d3e0f !important; 
+}
+
+/* Header */
+header {
+    background-color: #fff3cd;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 4px solid #e6dfc3;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #4d3e0f;
+}
+
+.card-dashboard {
+    border: none;
+    border-radius: 10px;
+    background: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #ffc107;
+}
+
+.card-dashboard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-dashboard h5 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4d3e0f;
+}
+
+.card-dashboard p {
+    font-size: 14px;
+    color: #666666;
+}
+
+.icon-dashboard {
+    font-size: 50px;
+    color: #ffc107;
+    margin-bottom: 15px;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #4d3e0f !important;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #e0a800 !important;
+    border-color: #e0a800 !important;
+}
+
+/* Footer 
+footer {
+    background-color: #e6dfc3;
+    color: #4d3e0f; 
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #4d3e0f;
+}
+*/
