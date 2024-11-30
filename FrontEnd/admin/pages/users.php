@@ -111,7 +111,7 @@ if (!$conn) {
                             echo "</tr>";
                         }
                     } else {
-                        echo "<tr><td colspan='4' class='text-center'>No hay usuarios registrados</td></tr>";
+                        echo "<tr><td colspan='7' class='text-center'>No hay usuarios registrados</td></tr>";
                     }
                     ?>
                 </tbody>
