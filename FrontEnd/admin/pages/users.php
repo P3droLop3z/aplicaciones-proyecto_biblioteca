@@ -1,3 +1,10 @@
+<?php
+require_once '../../../BackEnd/config/config.php';
+if (!$conn) {
+    die('Error: La conexión no se estableció correctamente.');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,7 +63,7 @@
         <!-- Tabla de Usuarios Comunes -->
         <div class="table-container">
             <div class="d-flex gap-5 mb-2">
-                <h2 class="text-muted">Usuarios Comunes Registrados</h2>
+                <h2 class="text-muted">Usuarios Registrados</h2>
                 <button type="submit" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#User">Dar de Alta</button>
             </div>
             <table class="table table-hover">
@@ -65,26 +72,48 @@
                         <th>ID</th>
                         <th>Nombre</th>
                         <th>Correo Electrónico</th>
+                        <th>Telefono</th>
+                        <th>Direccion</th>
+                        <th>Estado</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
-                <tbody id="usuariosComunes">
-                    <!--<tr>
-                        <td>1</td>
-                        <td>Juan Pérez</td>
-                        <td>juan@example.com</td>
-                        <td>
-                            <button class="btn btn-danger btn-sm">Dar de Baja</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Luisa Rodríguez</td>
-                        <td>luisa@example.com</td>
-                        <td>
-                            <button class="btn btn-danger btn-sm">Dar de Baja</button>
-                        </td>
-                    </tr>-->
+                <tbody>
+                    <?php
+                    // Ejecutar consulta
+                    $query = "SELECT UsuarioID, FirstName, LastName, Email, Telefono, Direccion, Estado FROM Usuarios WHERE ROL = 'Usuario'";
+                    $result = $conn->query($query);
+
+                    // Verificar si hay resultados
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr>";
+                            echo "<td>{$row['UsuarioID']}</td>";
+                            echo "<td>{$row['FirstName']} {$row['LastName']}</td>";
+                            echo "<td>{$row['Email']}</td>";
+                            echo "<td>{$row['Telefono']}</td>";
+                            echo "<td>{$row['Direccion']}</td>";
+                            echo "<td>{$row['Estado']}</td>";
+                            echo "<td>
+                                    <button 
+                                        class='btn btn-primary btn-sm editBtn' 
+                                        data-id='{$row['UsuarioID']}'
+                                        data-firstname='{$row['FirstName']}' 
+                                        data-lastname='{$row['LastName']}' 
+                                        data-email='{$row['Email']}'
+                                        data-telefono='{$row['Telefono']}'
+                                        data-direccion='{$row['Direccion']}'
+                                        data-estado='{$row['Estado']}'>
+                                        Editar
+                                    </button>
+                                    <a href='../../../BackEnd/routes/deleteUser.php?id={$row['UsuarioID']}' class='btn btn-danger btn-sm'>Eliminar</a>
+                                </td>";
+                            echo "</tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='4' class='text-center'>No hay usuarios registrados</td></tr>";
+                    }
+                    ?>
                 </tbody>
             </table>
         </div>
@@ -101,25 +130,66 @@
                     </tr>
                 </thead>
                 <tbody id="usuariosAdministradores">
-                    <!--<tr>
-                        <td>1</td>
-                        <td>Administrador Principal</td>
-                        <td>admin@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Admin Auxiliar</td>
-                        <td>auxiliar@example.com</td>
-                    </tr>-->
+        
                 </tbody>
             </table>
         </div>
+        
+        <!-- Modal para editar usuario -->
+        <div class="modal fade" id="editUserModal" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editUserModalLabel">Editar Usuario</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form id="editUserForm">
+                        <div class="modal-body">
+                            <input type="hidden" id="editUserId" name="userId">
+                            <div class="mb-3">
+                                <label for="editFirstName" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="editFirstName" name="firstName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="editLastName" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="editLastName" name="lastName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="editEmail" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="editEmail" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="editTelefono" class="form-label">Teléfono</label>
+                                <input type="text" class="form-control" id="editTelefono" name="telefono" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="editDireccion" class="form-label">Dirección</label>
+                                <input type="text" class="form-control" id="editDireccion" name="direccion" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="editEstado" class="form-label">Estado</label>
+                                <select class="form-select" id="editEstado" name="estado" required>
+                                    <option value="Activo">Activo</option>
+                                    <option value="Suspendido">Suspendido</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
+
+        <!-- Modal para agregar -->
         <div class="modal fade" id="User" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Nuevo Libro</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Nuevo Usuario</h5>
                     </div>
                     <div class="modal-body">
                         <form>
@@ -145,5 +215,6 @@
         </div>
 
     </div>
+    <script src="../../js/modalEditar.js"></script>
 </body>
 </html>
