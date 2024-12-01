@@ -80,13 +80,35 @@
                         </div>
                     </div>
                 </div>
-                <!-- Tarjeta adicional para más libros -->
+
                 <div class="col-md-3">
                     <div class="card shadow-sm">
                         <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 2">
                         <div class="card-body">
                             <h5 class="card-title">Título del Libro</h5>
                             <p class="card-text">Autor: John Smith</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Título del Libro</h5>
+                            <p class="card-text">Autor: Jane Doe</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Título del Libro</h5>
+                            <p class="card-text">Autor: Jane Doe</p>
                             <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
                         </div>
                     </div>
