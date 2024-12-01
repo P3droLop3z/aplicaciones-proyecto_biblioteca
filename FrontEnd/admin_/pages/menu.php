@@ -23,7 +23,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./../../main.html" class="nav-link text-white" title="Cerrar sesión">
+                        <a href="./../../main.php" class="nav-link text-white" title="Cerrar sesión">
                             <span class="material-icons">logout</span>
                         </a>
                     </li>
