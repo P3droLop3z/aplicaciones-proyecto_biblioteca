@@ -107,16 +107,17 @@ if (!$conn) {
                             echo "</tr>";
                         }
                     } else {
-                        echo "<tr><td colspan='4' class='text-center'>No hay usuarios registrados</td></tr>";
-                    }
-                    ?>
+                        echo "<tr><td colspan='7' class='text-center'>No hay usuarios registrados</td></tr>";
+                    }?>
                 </tbody>
             </table>
         </div>
 
         <!-- Administradores -->
-        <div class="table-container mt-5">
-            <h2 class="text-muted">Administradores</h2>
+        <div class="table-container">
+            <div class="d-flex gap-5 mb-2">
+                <h2 class="text-muted">Administradores</h2>
+            </div>
             <table class="table table-hover">
                 <thead>
                     <tr>
@@ -129,9 +130,11 @@ if (!$conn) {
                     </tr>
                 </thead>
                 <tbody id="usuariosAdministradores">
+                    
                 </tbody>
             </table>
         </div>
+
     </div>
 
     <!-- Modal para agregar usuario -->

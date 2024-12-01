@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
         <div class="container">
-            <a class="navbar-brand text-white fw-bold" href="./menu.html">Biblioteca Administrador</a>
+            <a class="navbar-brand text-white fw-bold" href="./menu.php">Biblioteca Administrador</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,7 +47,7 @@
                         <span class="material-icons icon-dashboard">group</span>
                         <h5>Usuarios</h5>
                         <p>Gestiona los usuarios registrados en el sistema.</p>
-                        <a href="./users.html" class="btn btn-primary">Ver Usuarios</a>
+                        <a href="./users.php" class="btn btn-primary">Ver Usuarios</a>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                         <span class="material-icons icon-dashboard">book</span>
                         <h5>Libros</h5>
                         <p>Administra los libros disponibles en la biblioteca.</p>
-                        <a href="./books.html" class="btn btn-primary">Ver Libros</a>
+                        <a href="./books.php" class="btn btn-primary">Ver Libros</a>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                         <span class="material-icons icon-dashboard">assignment</span>
                         <h5>Préstamos</h5>
                         <p>Gestiona los préstamos realizados por los usuarios.</p>
-                        <a href="./loan.html" class="btn btn-primary">Ver Préstamos</a>
+                        <a href="./loan.php" class="btn btn-primary">Ver Préstamos</a>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                         <span class="material-icons icon-dashboard">bookmark</span>
                         <h5>Reservas</h5>
                         <p>Administra las reservas realizadas por los usuarios.</p>
-                        <a href="./reservation.html" class="btn btn-primary">Ver Reservas</a>
+                        <a href="./reservation.php" class="btn btn-primary">Ver Reservas</a>
                     </div>
                 </div>
             </div>
@@ -90,16 +90,16 @@
                         <span class="material-icons icon-dashboard">money</span>
                         <h5>Multas</h5>
                         <p>Gestiona las multas pendientes de los usuarios.</p>
-                        <a href="./ticket.html" class="btn btn-primary">Ver Multas</a>
+                        <a href="./ticket.php" class="btn btn-primary">Ver Multas</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <!--<footer class="text-center py-3">
+    <footer class="text-center py-3">
         <p class="text-muted">&copy; 2024 Biblioteca Digital. Todos los derechos reservados.</p>
-    </footer>-->
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-k5Mzrx3ij4U1s8KfNxknslJ4+ZOm+zRx/8f7a4gJmgJ7xs1dt2e0dtnWITaeUtF6" crossorigin="anonymous"></script>
 </body>
