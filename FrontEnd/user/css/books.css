@@ -1,6 +1,6 @@
 /* General */
 body {
-    background-color: #fff8dc; /* Fondo amarillo claro */
+    background-color: #fff8dc;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -22,51 +22,56 @@ body {
     font-size: 24px;
     color: #d39e00;
     border-bottom: 2px solid #ffc107;
-    display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-/* Tablas */
-.table {
+/* Book Card */
+.book-card {
+    background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.table-warning {
-    background-color: #ffeeba;
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.table-hover tbody tr:hover {
-    background-color: #ffeeba;
+.book-image {
+    background: #ffeeba;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #4d3e0f;
+    text-align: center;
 }
 
-/* Botones */
-.btn-primary {
-    background-color: #28a745; /* Verde para acción de préstamo */
-    border-color: #28a745;
+.book-title {
+    padding: 10px;
+}
+
+.book-info h5, .book-info p {
+    margin: 0;
+}
+
+/* Modal */
+.modal-body img {
+    max-height: 200px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-header.bg-warning {
+    background-color: #ffc107;
     color: #fff;
-}
-
-.btn-primary:disabled {
-    background-color: #c3e6cb; /* Verde claro cuando está deshabilitado */
-    border-color: #c3e6cb;
-    color: #fff;
-}
-
-.btn-primary:hover:enabled {
-    background-color: #218838;
-    border-color: #218838;
-}
-
-.btn-secondary {
-    background-color: #6c757d; /* Gris para acción de reserva */
-    border-color: #6c757d;
-    color: #fff;
-}
-
-.btn-secondary:hover {
-    background-color: #5a6268;
-    border-color: #545b62;
 }
 
 .btn-y {
