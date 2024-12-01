@@ -60,7 +60,6 @@
         <!-- Título -->
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h1 class="section-title">Gestión de Préstamos</h1>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Loan">Registrar Préstamo</button>
         </div>
 
         <!-- Tabla de Préstamos -->
@@ -80,42 +79,6 @@
                     <!-- Los datos serán generados dinámicamente -->
                 </tbody>
             </table>
-        </div>
-    </div>
-
-    <!-- Modal para Registrar Préstamo -->
-    <div class="modal fade" id="Loan" tabindex="-1" aria-labelledby="newLoanModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header bg-warning text-white">
-                    <h5 class="modal-title" id="newLoanModalLabel">Registrar Nuevo Préstamo</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="usuario" class="form-label">Usuario</label>
-                            <input type="text" id="usuario" class="form-control" placeholder="Nombre del usuario" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="libro" class="form-label">Libro</label>
-                            <input type="text" id="libro" class="form-control" placeholder="Título del libro" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="fechaPrestamo" class="form-label">Fecha de Préstamo</label>
-                            <input type="date" id="fechaPrestamo" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="fechaDevolucion" class="form-label">Fecha de Devolución</label>
-                            <input type="date" id="fechaDevolucion" class="form-control" required>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Registrar Préstamo</button>
-                </div>
-            </div>
         </div>
     </div>
 
