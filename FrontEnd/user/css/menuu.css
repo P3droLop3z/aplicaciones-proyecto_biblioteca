@@ -52,3 +52,9 @@ body {
 .card-text {
     color: #4d3e0f;
 }
+
+.btn-y {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #4d3e0f;
+}

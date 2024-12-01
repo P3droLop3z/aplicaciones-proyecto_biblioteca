@@ -1,0 +1,76 @@
+/* General */
+body {
+    background-color: #fff8dc; /* Fondo amarillo claro */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffc107;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #4d3e0f !important;
+}
+
+/* Título */
+.section-title {
+    font-size: 24px;
+    color: #d39e00;
+    border-bottom: 2px solid #ffc107;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Tablas */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table-warning {
+    background-color: #ffeeba;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #ffeeba;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #28a745; /* Verde para acción de préstamo */
+    border-color: #28a745;
+    color: #fff;
+}
+
+.btn-primary:disabled {
+    background-color: #c3e6cb; /* Verde claro cuando está deshabilitado */
+    border-color: #c3e6cb;
+    color: #fff;
+}
+
+.btn-primary:hover:enabled {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Gris para acción de reserva */
+    border-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.btn-y {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #4d3e0f;
+}

@@ -22,6 +22,9 @@
                         <a class="nav-link text-white fw-semibold" href="./menu.php">Inicio</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold" href="./books.php">Libros</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-white fw-semibold" href="./loan.php">Mis Préstamos</a>
                     </li>
                     <li class="nav-item">
@@ -65,57 +68,6 @@
             </div>
         </div>
 
-        <!-- Libros Destacados -->
-        <section>
-            <h2 class="text-muted mb-4">Libros Destacados</h2>
-            <div class="row g-4">
-                <!-- Tarjeta de libro -->
-                <div class="col-md-3">
-                    <div class="card shadow-sm">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Título del Libro</h5>
-                            <p class="card-text">Autor: Jane Doe</p>
-                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card shadow-sm">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Título del Libro</h5>
-                            <p class="card-text">Autor: John Smith</p>
-                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card shadow-sm">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Título del Libro</h5>
-                            <p class="card-text">Autor: Jane Doe</p>
-                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card shadow-sm">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Título del Libro</h5>
-                            <p class="card-text">Autor: Jane Doe</p>
-                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Resumen de Actividad -->
         <section class="mt-5">
             <h2 class="text-muted mb-4">Resumen de tu Actividad</h2>
@@ -144,6 +96,104 @@
                         </div>
                     </div>
                 </div>
+                <div></div>
+            </div>
+        </section>
+
+        <!-- Libros Destacados -->
+        <section>
+            <h2 class="text-muted mb-4">Libros Destacados</h2>
+            <div class="row g-4">
+                <!-- Tarjeta de libro -->
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 1">
+                        <div class="card-body">
+                            <h5 class="card-title" id="title1">Título del Libro</h5>
+                            <p class="card-text my-0">Autor:</p><p id="name1">Jane Doe</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 2">
+                        <div class="card-body">
+                            <h5 class="card-title" id="title2">Título del Libro</h5>
+                            <p class="card-text my-0">Autor:</p><p id="name2">John Smith</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 1">
+                        <div class="card-body">
+                            <h5 class="card-title" id="title3">Título del Libro</h5>
+                            <p class="card-text my-0">Autor:</p><p id="name3">Jane Doe</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 1">
+                        <div class="card-body">
+                            <h5 class="card-title" id="title4">Título del Libro</h5>
+                            <p class="card-text my-0">Autor:</p><p id="name4">Jane Doe</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 1">
+                        <div class="card-body">
+                            <h5 class="card-title" id="title5">Título del Libro</h5>
+                            <p class="card-text my-0">Autor:</p><p id="name5">Jane Doe</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 1">
+                        <div class="card-body">
+                            <h5 class="card-title" id="title6">Título del Libro</h5>
+                            <p class="card-text my-0">Autor:</p><p id="name6">Jane Doe</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 1">
+                        <div class="card-body">
+                            <h5 class="card-title" id="title7">Título del Libro</h5>
+                            <p class="card-text my-0">Autor:</p><p id="name7">Jane Doe</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Libro 1">
+                        <div class="card-body">
+                            <h5 class="card-title" id="title8">Título del Libro</h5>
+                            <p class="card-text my-0">Autor:</p><p id="name8">Jane Doe</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="./books.php" class="btn btn-primary btn-sm my-3 btn-y">Ver Más</a>
             </div>
         </section>
     </div>
