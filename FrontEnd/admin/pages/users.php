@@ -213,7 +213,6 @@ if (!$conn) {
                 </div>
             </div>
         </div>
-
     </div>
     <script src="../../js/modalEditar.js"></script>
 </body>
