@@ -9,14 +9,14 @@ if (isset($_GET['id'])) {
     $stmt->bind_param('i', $userId);
 
     if ($stmt->execute()) {
-        header('Location: http://localhost:8888/aplicaciones-proyecto_biblioteca/FrontEnd/admin/pages/users.php?success=Usuario eliminado');
+        header('Location: http://localhost:8888/aplicaciones-proyecto_biblioteca/FrontEnd/admin_/pages/users.php?success=Usuario eliminado');
         exit();
     } else {
-        header('Location: http://localhost:8888/aplicaciones-proyecto_biblioteca/FrontEnd/admin/pages/users.php?error=No se pudo eliminar al usuario');
+        header('Location: http://localhost:8888/aplicaciones-proyecto_biblioteca/FrontEnd/admin_/pages/users.php?error=No se pudo eliminar al usuario');
         exit();
     }
 } else {
-    header('Location: http://localhost:8888/aplicaciones-proyecto_biblioteca/FrontEnd/admin/pages/users.php');
+    header('Location: http://localhost:8888/aplicaciones-proyecto_biblioteca/FrontEnd/admin_/pages/users.php');
     exit();
 }
 ?>
