@@ -22,6 +22,9 @@
                         <a class="nav-link text-white fw-semibold" href="./menu.php">Inicio</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold" href="./books.php">Libros</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-white fw-semibold" href="./loan.php">Mis Préstamos</a>
                     </li>
                     <li class="nav-item">

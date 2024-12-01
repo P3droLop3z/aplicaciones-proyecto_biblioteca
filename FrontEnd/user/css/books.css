@@ -1,0 +1,81 @@
+/* General */
+body {
+    background-color: #fff8dc;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffc107;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #4d3e0f !important;
+}
+
+/* Título */
+.section-title {
+    font-size: 24px;
+    color: #d39e00;
+    border-bottom: 2px solid #ffc107;
+    margin-bottom: 20px;
+}
+
+/* Book Card */
+.book-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book-image {
+    background: #ffeeba;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #4d3e0f;
+    text-align: center;
+}
+
+.book-title {
+    padding: 10px;
+}
+
+.book-info h5, .book-info p {
+    margin: 0;
+}
+
+/* Modal */
+.modal-body img {
+    max-height: 200px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-header.bg-warning {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.btn-y {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #4d3e0f;
+}
