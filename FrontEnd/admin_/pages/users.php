@@ -113,7 +113,7 @@ if (!$conn) {
             </table>
         </div>
 
-        <!-- Administradores -->
+        <!-- Administradores 
         <div class="table-container">
             <div class="d-flex gap-5 mb-2">
                 <h2 class="text-muted">Administradores</h2>
@@ -133,7 +133,7 @@ if (!$conn) {
                     
                 </tbody>
             </table>
-        </div>
+        </div> -->
 
     </div>
 
@@ -146,36 +146,38 @@ if (!$conn) {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="addUserForm">
                         <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre Completo</label>
-                            <input type="text" id="nombre" class="form-control" placeholder="Nombre del usuario" required>
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" id="addFirstName" class="form-control" placeholder="Nombre del usuario" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Apellido:</label>
+                            <input type="text" id="addLastName" class="form-control" placeholder="Apellido del usuario" required>
                         </div>
                         <div class="mb-3">
                             <label for="correo" class="form-label">Correo Electrónico</label>
-                            <input type="email" id="correo" class="form-control" placeholder="Correo electrónico del usuario" required>
+                            <input type="email" id="addEmail" class="form-control" placeholder="Correo electrónico del usuario" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contraseña" class="form-label">Contraseña Provisional</label>
+                            <input type="password" id="addPass" class="form-control" placeholder="Contraseña del Usuario" required>
                         </div>
                         <div class="mb-3">
                             <label for="telefono" class="form-label">Teléfono</label>
-                            <input type="text" id="telefono" class="form-control" placeholder="Teléfono del usuario" required>
+                            <input type="text" id="addTelefono" class="form-control" placeholder="Teléfono del usuario" required>
                         </div>
                         <div class="mb-3">
                             <label for="direccion" class="form-label">Dirección</label>
-                            <input type="text" id="direccion" class="form-control" placeholder="Dirección del usuario" required>
+                            <input type="text" id="addDireccion" class="form-control" placeholder="Dirección del usuario" required>
                         </div>
-                        <div class="mb-3">
-                            <label for="estado" class="form-label">Estado</label>
-                            <select id="estado" class="form-select" required>
-                                <option value="Activo">Activo</option>
-                                <option value="Suspendido">Suspendido</option>
-                            </select>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Agregar Usuario</button>
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Agregar Usuario</button>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -226,8 +228,9 @@ if (!$conn) {
                 </form>
             </div>
         </div>
-    </div>
+    </div>
     <script src="../../js/modalEditar.js"></script>    
-    <script src="../../js/alertDeleteUser.js"></script>      
+    <script src="../../js/alertDeleteUser.js"></script> 
+    <script src="../../js/addUser.js"></script>     
 </body>
 </html>

@@ -1,4 +1,4 @@
-// Seleccionar botones de editar
+// Seleccionar botones de editar usuario
 document.addEventListener('DOMContentLoaded', function () {
     const editButtons = document.querySelectorAll('.editBtn');
 
