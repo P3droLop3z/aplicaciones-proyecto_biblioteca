@@ -20,12 +20,12 @@
                 
                 <div class="mb-3">
                     <label for="password" class="form-label">Contraseña:</label>
-                    <input type="password" name="password" id="password" class="form-control" placeholder="Tu contraseña" required>
+                    <input type="password" name="pass" id="pass" class="form-control" placeholder="Tu contraseña" required>
                 </div>
                 
                 <button type="submit" class="btn btn-primary w-100">Ingresar</button>
             </form>
-            
+
             <?php if (isset($_GET['error'])): ?>
                 <div class="alert alert-danger mt-3" role="alert">
                     <?php echo htmlspecialchars($_GET['error']); ?>
