@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (password_verify($password, $admin['pass'])) {
             $_SESSION['admin_id'] = $admin['UsuarioID'];
             $_SESSION['admin_name'] = $admin['FirstName'] . ' ' . $admin['LastName'];
-            header('Location: http://localhost:8888/aplicaciones-proyecto_biblioteca/FrontEnd/admin/pages/menu.html');
+            header('Location: http://localhost:8888/aplicaciones-proyecto_biblioteca/FrontEnd/admin_/pages/menu.html');
             exit();
         } else {
             header('Location: ../view/loginAdmin.php?error=Contraseña incorrectaa');

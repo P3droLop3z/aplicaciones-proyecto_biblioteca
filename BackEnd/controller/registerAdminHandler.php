@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param('ssssss', $firstName, $lastName, $email, $hashed_password, $telefono, $direccion);
 
     if ($stmt->execute()) {
-        header('Location: http://localhost:8888/aplicaciones-proyecto_biblioteca/FrontEnd/admin/pages/menu.html');
+        header('Location: http://localhost:8888/aplicaciones-proyecto_biblioteca/FrontEnd/admin_/pages/menu.html');
         exit();
     } else {
         header('Location: ../view/registerAdmin.php?error=Error al registrar el administrador');
