@@ -102,7 +102,7 @@ if (!$conn) {
                                         data-estado='{$row['Estado']}'>
                                         Editar
                                     </button>
-                                    <a href='../../../BackEnd/routes/deleteUser.php?id={$row['UsuarioID']}' class='btn btn-danger btn-sm'>Eliminar</a>
+                                    <a href ='#' class='btn btn-danger btn-sm deleteBtn' data-id='{$row['UsuarioID']}'>Eliminar</a>
                                 </td>";
                             echo "</tr>";
                         }
@@ -227,6 +227,7 @@ if (!$conn) {
             </div>
         </div>
     </div>
-    <script src="../../js/modalEditar.js"></script>          
+    <script src="../../js/modalEditar.js"></script>    
+    <script src="../../js/alertDeleteUser.js"></script>      
 </body>
 </html>
