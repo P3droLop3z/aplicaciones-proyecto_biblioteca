@@ -19,16 +19,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white fw-semibold" href="./menu.html">Inicio</a>
+                        <a class="nav-link text-white fw-semibold" href="./menu.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white fw-semibold" href="./loan.html">Mis Préstamos</a>
+                        <a class="nav-link text-white fw-semibold" href="./loan.php">Mis Préstamos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white fw-semibold" href="./reservation.html">Mis Reservas</a>
+                        <a class="nav-link text-white fw-semibold" href="./reservation.php">Mis Reservas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white fw-semibold" href="./ticket.html">Mis Multas</a>
+                        <a class="nav-link text-white fw-semibold" href="./ticket.php">Mis Multas</a>
                     </li>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
@@ -38,7 +38,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./../../main.html" class="nav-link text-white" title="Cerrar sesión">
+                                <a href="./../../main.php" class="nav-link text-white" title="Cerrar sesión">
                                     <span class="material-icons">logout</span>
                                 </a>
                             </li>
