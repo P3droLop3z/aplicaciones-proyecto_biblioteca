@@ -88,36 +88,21 @@
             <table class="table table-hover align-middle">
                 <thead class="table-warning">
                     <tr>
-                        <th>ID</th>
                         <th>Libro</th>
-                        <th>Autor</th>
                         <th>Fecha de Reserva</th>
+                        <th>Fecha Limite</th>
                         <th>Estado</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody id="tablaReservas">
-                    <tr>
-                        <td>1</td>
-                        <td>Cien Años de Soledad</td>
-                        <td>Gabriel García Márquez</td>
-                        <td>2024-11-10</td>
-                        <td><span class="badge bg-warning text-dark">Pendiente</span></td>
-                        <td><button class="btn btn-danger btn-sm">Cancelar</button></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>1984</td>
-                        <td>George Orwell</td>
-                        <td>2024-11-05</td>
-                        <td><span class="badge bg-success">Confirmada</span></td>
-                        <td><button class="btn btn-danger btn-sm">Cancelar</button></td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </div>
     </div>
 
+    <script src="../js/reservasUser.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

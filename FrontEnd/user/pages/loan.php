@@ -65,39 +65,21 @@
             <table class="table table-hover align-middle">
                 <thead class="table-warning">
                     <tr>
-                        <th>ID</th>
                         <th>Libro</th>
-                        <th>Autor</th>
                         <th>Fecha de Préstamo</th>
-                        <th>Fecha de Devolución</th>
+                        <th>Fecha Limite de Devolución</th>
                         <th>Estado</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody id="tablaPrestamos">
-                    <tr>
-                        <td>1</td>
-                        <td>Cien Años de Soledad</td>
-                        <td>Gabriel García Márquez</td>
-                        <td>2024-11-01</td>
-                        <td>2024-11-15</td>
-                        <td><span class="badge bg-success">Activo</span></td>
-                        <td><button class="btn btn-primary btn-sm">Devolver</button></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>1984</td>
-                        <td>George Orwell</td>
-                        <td>2024-10-20</td>
-                        <td>2024-11-03</td>
-                        <td><span class="badge bg-danger">Atrasado</span></td>
-                        <td><button class="btn btn-primary btn-sm">Devolver</button></td>
-                    </tr>
+    
                 </tbody>
             </table>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/loanUser.js"></script>
 </body>
 </html>

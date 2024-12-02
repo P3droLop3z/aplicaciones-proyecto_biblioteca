@@ -11,7 +11,8 @@ if (isset($_GET['bookID'])) {
             b.LibroID, 
             b.Titulo, 
             b.Apublicacion, 
-            b.Copias, 
+            b.Copias,
+            b.CopiasDisp, 
             a.FirstName, a.LastName, 
             c.CategoryName 
         FROM Libros b

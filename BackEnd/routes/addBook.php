@@ -26,9 +26,9 @@ if (isset($data['title'], $data['authorFirstName'], $data['authorLastName'], $da
     $authorId = $conn->insert_id;
 
     // Insertar libro
-    $query = "INSERT INTO Libros (Titulo, Apublicacion, CategoryID, AutorID, Copias) VALUES (?, ?, ?, ?, ?)";
+    $query = "INSERT INTO Libros (Titulo, Apublicacion, CategoryID, AutorID, Copias, CopiasDisp) VALUES (?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($query);
-    $stmt->bind_param('siiii', $title, $publicationYear, $categoryId, $authorId, $copies);
+    $stmt->bind_param('siiii', $title, $publicationYear, $categoryId, $authorId, $copies, $copies);
 
     if ($stmt->execute()) {
         // Obtener el ID del libro recién insertado

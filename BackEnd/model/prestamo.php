@@ -29,7 +29,7 @@ if (isset($data['bookId'], $data['loanDate'], $data['dueDate'], $data['status'],
 
 
     // Insertar el préstamo en la base de datos
-    $query = "INSERT INTO Prestamos (EjemplarID, UsuarioID, FechaPres, FechaLim, Estado) VALUES (?, ?, ?, ?)";
+    $query = "INSERT INTO Prestamos (EjemplarID, UsuarioID, FechaPres, FechaLim, Estado) VALUES (?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($query);
     $stmt->bind_param('iisss', $ejemplarId, $userId, $loanDate, $dueDate, $status);
 

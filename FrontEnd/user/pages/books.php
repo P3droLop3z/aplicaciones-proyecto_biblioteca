@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libros Disponibles - Usuario</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./../css/books.css">
 </head>
@@ -102,11 +103,10 @@
                         <span class="me-2 fw-bold">Copias Totales:</span>
                         <span id="BookCopies"></span>
                     </p>
-                    <!--
                     <p class="d-flex align-items-center">
                         <span class="me-2 fw-bold">Copias Disponibles:</span>
                         <span id="BookAvailableCopies"></span>
-                    </p>-->
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button id="prestBookBtn" type="button" class="btn btn-primary">Pedir Préstamo</button>

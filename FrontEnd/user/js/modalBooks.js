@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     bookModal.addEventListener('show.bs.modal', function (event) {
         // Obtener el bookID desde el atributo data
-        const bookID = event.relatedTarget.getAttribute('data-book-id');
+        bookID = event.relatedTarget.getAttribute('data-book-id');
+        console.log("ID del libro seleccionado:", bookID);
 
         // Hacer una solicitud AJAX para obtener los detalles del libro
         fetch(`../../../BackEnd/model/cardBookDetails.php?bookID=${bookID}`)
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.getElementById('BookYear').textContent = data.Apublicacion;
                     document.getElementById('BookCategory').textContent = data.CategoryName;
                     document.getElementById('BookCopies').textContent = data.Copias;
+                    document.getElementById('BookAvailableCopies').textContent = data.CopiasDisp;
                 }
             })
             .catch(error => console.error('Error al cargar los detalles del libro:', error));
@@ -44,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
-                        bookId: bookId,
+                        bookId: bookID,
                         loanDate: formattedCurrentDate,
                         dueDate: formattedDueDate,
                         status: 'Pendiente', // Estado predeterminado
