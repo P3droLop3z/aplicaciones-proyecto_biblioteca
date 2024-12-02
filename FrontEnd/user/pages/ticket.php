@@ -66,28 +66,15 @@
             <table class="table table-hover align-middle">
                 <thead class="table-warning">
                     <tr>
-                        <th>ID</th>
-                        <th>Descripción</th>
+                        <th>Libro</th>
                         <th>Monto</th>
+                        <th>Fecha de Emision</th>
                         <th>Estado</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody id="tablaMultas">
-                    <tr>
-                        <td>1</td>
-                        <td>Devolución tardía</td>
-                        <td>$10</td>
-                        <td><span class="badge bg-danger">Pendiente</span></td>
-                        <td><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#pagarMultaModal">Pagar</button></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Libro dañado</td>
-                        <td>$15</td>
-                        <td><span class="badge bg-success">Pagada</span></td>
-                        <td>-</td>
-                    </tr>
+            
                 </tbody>
             </table>
         </div>
@@ -114,5 +101,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/multasUser.js"></script>
 </body>
 </html>

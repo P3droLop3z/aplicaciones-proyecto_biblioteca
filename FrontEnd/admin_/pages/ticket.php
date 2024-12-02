@@ -70,8 +70,9 @@
                     <tr>
                         <th>ID</th>
                         <th>Usuario</th>
-                        <th>Descripción</th>
+                        <th>Libro</th>
                         <th>Monto</th>
+                        <th>Fecha de emision</th>
                         <th>Estado</th>
                         <th>Acciones</th>
                     </tr>
@@ -124,5 +125,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/getTickets.js"></script>
 </body>
 </html>

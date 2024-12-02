@@ -71,6 +71,7 @@
                         <th>Usuario</th>
                         <th>Libro</th>
                         <th>Fecha de Reserva</th>
+                        <th>Fecha de Expiracion</th>
                         <th>Estado</th>
                         <th>Acciones</th>
                     </tr>
@@ -83,5 +84,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/getReservas.js"></script>
 </body>
 </html>
