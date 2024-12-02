@@ -59,31 +59,17 @@
             <h1 class="section-title">Libros Disponibles</h1>
             <p class="text-muted">Consulta los libros disponibles en la biblioteca.</p>
         </div>
-
-        <!-- Lista de Libros -->
-        <div class="row g-4">
+        <div class="row g-4" id="booksList">
             <div class="col-12">
-                <div class="book-card shadow-sm d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#bookModal">
-                    <div class="book-image">
-                        <div class="book-title" id="BookTitle">1984</div>
-                    </div>
-                    <div class="book-info px-4">
-                        <p class="d-flex align-items-center">
-                            <span class="me-2 fw-bold">Año:</span>
-                            <span id="BookYear">1967</span>
-                        </p>
-                        <p class="d-flex align-items-center">
-                            <span class="me-2 fw-bold">Autor:</span>
-                            <span id="BookAuthor">Gabriel García Márquez</span>
-                        </p>
-                        <p class="d-flex align-items-center">
-                            <span class="me-2 fw-bold">Categoría:</span>
-                            <span id="BookCategory">Ficción</span>
-                        </p>
-                    </div>
-                </div>
+                <!-- Las cards horizontales se generarán dinámicamente aquí -->
             </div>
         </div>
+        
+        <nav aria-label="Paginación de libros" class="mt-4">
+            <ul id="pagination" class="pagination justify-content-center">
+                <!-- Los botones de paginación se generarán dinámicamente aquí -->
+            </ul>
+        </nav>
     </div>
 
     <!-- Modal -->
@@ -98,31 +84,32 @@
                     <img id="modalBookImage" src="./../../assets/Libro.png" alt="Libro" class="img-fluid mb-3" style="max-height: 200px;">
                     <p class="d-flex align-items-center">
                         <span class="me-2 fw-bold">Título:</span>
-                        <span id="BookTitle">1984</span>
+                        <span id="BookTitle"></span>
                     </p>
                     <p class="d-flex align-items-center">
                         <span class="me-2 fw-bold">Año:</span>
-                        <span id="BookYear">1967</span>
+                        <span id="BookYear"></span>
                     </p>
                     <p class="d-flex align-items-center">
                         <span class="me-2 fw-bold">Autor:</span>
-                        <span id="BookAuthor">Gabriel García Márquez</span>
+                        <span id="BookAuthor"></span>
                     </p>
                     <p class="d-flex align-items-center">
                         <span class="me-2 fw-bold">Categoría:</span>
-                        <span id="BookCategory">Ficción</span>
+                        <span id="BookCategory"></span>
                     </p>
                     <p class="d-flex align-items-center">
                         <span class="me-2 fw-bold">Copias Totales:</span>
-                        <span id="BookTotalCopies">12</span>
+                        <span id="BookCopies"></span>
                     </p>
+                    <!--
                     <p class="d-flex align-items-center">
                         <span class="me-2 fw-bold">Copias Disponibles:</span>
-                        <span id="BookAvailableCopies">8</span>
-                    </p>
+                        <span id="BookAvailableCopies"></span>
+                    </p>-->
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Pedir Préstamo</button>
+                    <button id="prestBookBtn" type="button" class="btn btn-primary">Pedir Préstamo</button>
                     <button type="button" class="btn btn-secondary">Reservar</button>
                 </div>
             </div>
@@ -130,5 +117,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bookPagination.js"></script>
+    <script src="../js/modalBooks.js"></script>
 </body>
 </html>

@@ -31,7 +31,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s;
 }
 
 .book-card:hover {
@@ -54,10 +54,17 @@ body {
 
 .book-title {
     padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
 }
 
-.book-info h5, .book-info p {
+.book-info h5 {
     margin: 0;
+}
+
+.book-info p {
+    margin-bottom: 0.5rem;
 }
 
 /* Modal */
@@ -78,4 +85,8 @@ body {
     background-color: #ffc107;
     border-color: #ffc107;
     color: #4d3e0f;
+}
+
+.pagination {
+    margin-top: 20px;
 }
